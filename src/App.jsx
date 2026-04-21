@@ -2,9 +2,11 @@ import { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import Home from './pages/Home';
 import PasswordInput from './components/PasswordInput';
+import BirthdayCard from './components/BirthdayCard';
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [showBirthday, setShowBirthday] = useState(true);
   const [isPlaying, setIsPlaying] = useState(false);
   const [cursorTrail, setCursorTrail] = useState([]);
   const playerRef = useRef(null);
@@ -190,6 +192,8 @@ function App() {
       {/* Main Content */}
       {!isAuthenticated ? (
         <PasswordInput onSuccess={() => setIsAuthenticated(true)} />
+      ) : showBirthday ? (
+        <BirthdayCard onNext={() => setShowBirthday(false)} />
       ) : (
         <Home onEnvelopeOpen={startMusic} />
       )}
@@ -202,7 +206,7 @@ function App() {
           transition={{ delay: 2 }}
           className="text-center text-sm font-body text-gray-500/60"
         >
-          Made with ❤️
+          Made with ❤️ Wahyu Budi Lestari to celebrate her special day.
         </motion.div>
       </footer>
     </div>

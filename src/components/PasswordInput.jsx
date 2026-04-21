@@ -113,7 +113,7 @@ const PasswordInput = ({ onSuccess }) => {
           transition={{ delay: 1 }}
           className="text-center text-gray-500 text-sm mt-6"
         >
-          Hint: Tanggal ketika diuji jarak 💪
+          Hint: Our First Date❤️
         </motion.p>
 
         {attempts > 0 && (
