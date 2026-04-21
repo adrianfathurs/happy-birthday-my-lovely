@@ -7,7 +7,7 @@ const PasswordInput = ({ onSuccess }) => {
   const [error, setError] = useState('');
   const [isShaking, setIsShaking] = useState(false);
 
-  const CORRECT_PASSWORD = '2025-04-04';
+  const CORRECT_PASSWORD = '2025-04-02';
   const MAX_ATTEMPTS = 3;
   const WHATSAPP_REDIRECT = 'https://wa.me/6289634097803?text=I%20love%20you%20%E2%9D%A4%EF%B8%8F%20minta%20passwordnya%20dong';
 
