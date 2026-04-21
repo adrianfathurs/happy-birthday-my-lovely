@@ -1,3 +1,9 @@
+const basePath = import.meta.env.BASE_URL || '/';
+const addBasePath = (path) => {
+  if (path.startsWith('http')) return path;
+  return `${basePath}images/${path.split('/').pop()}`;
+};
+
 // data/timeline.js
 export const timelineData = [
   {
@@ -6,10 +12,10 @@ export const timelineData = [
     title: "✨First Time We Met💕",
     description: "Hari pertama waktu ituu, kita ketemu😁. Rasanya ga nyangka yaa.... bisa ngajak kamu ketemu, ngobrol, truss liburan ke pantai. Melewati banyak drama, meyakinkanmu kalo aku memang bener' pengen ketemu, memang pengen serius pengen menjalin hubungan sama kamu, Dan akhirnya kamu kasih kesempatan aku buat njelasin apa maksutku pengen deket kamu dan aku rasa kamu dengerin apa yg aku omongin dengan seksama. \nMemang waktu itu masih sedikit canggung satu sama lain, tapi menurutku itu awal yang bagus karena kita bisa saling mengenal satu sama lain, saling bertukar isi kepala dari hiruk pikuk pekerjaan, pengalaman kita masing-masing, dan hal-hal random lainnya. Dan istimewannya kita udah ngobrolin mengenai planning dari masing' kita buat kedepannya. Dari situ kita tahu tujuan kita saling membuka hati satu sama lain❤️",
     images: [
-      "/images/card_1_1.jpeg",
-      "/images/card_1_2.jpeg",
-      "/images/card_1_3.mp4",
-      "/images/card_1_4.mp4"
+      addBasePath("/images/card_1_1.jpeg"),
+      addBasePath("/images/card_1_2.jpeg"),
+      addBasePath("/images/card_1_3.mp4"),
+      addBasePath("/images/card_1_4.mp4")
     ]
   },
   {
@@ -18,8 +24,8 @@ export const timelineData = [
     title: "Pertama kali diuji jarak tapi kita bisa melewati semua💪",
     description: "Ya hari itu tiba, waktu awal kita bertemu lalu diuji dengan jarak. Jaraknya ga main' ya langsung antar pulau😢. Mungkin kebanyakan orang bakal ngomong alah alay besok kan bakalan ketemu lagii. Tapi bukan itu pointnya, pengujian jarak ini bisa kita lewati dengan baik. Dimana aku yang awal' kesulitan buat bagi waktu untuk perform di team lalu harus belajar untuk terus berkabar yang mana notabene nya belum pernah aku alami. Tapi kamu selalu menguatkan, kasih perhatian yang luar biasa dan selalu ngingetin bahwa kasih kabar itu penting buat orang yang sedang menunggu keberadaan kita❤️. Disitu kamu bisa lebih meyakinkanku bahwa kamu itu adalah perempuan yang aku minta lewat doa selama ini😊",
     images: [
-      "/images/card_2_1.jpeg",
-      "/images/card_2_2.jpeg",
+      addBasePath("/images/card_2_1.jpeg"),
+      addBasePath("/images/card_2_2.jpeg"),
     ]
   },
   {
@@ -28,12 +34,12 @@ export const timelineData = [
     title: "Our First Trip",
     description: "Perjalanan pertama kita bersama ke pantai. Menikmati matahari terbenam, berjalan di pasir sambil berpegangan tangan. Momen yang tak terlupakan, di mana aku tahu kamulah tempat pulangku.",
     images: [
-      "/images/card_3_1.jpeg",
-      "/images/card_3_2.jpeg",
-      "/images/card_3_3.jpeg",
-      "/images/card_3_4.jpeg",
-      "/images/card_3_5.jpeg",
-      "/images/card_3_6.mp4"
+      addBasePath("/images/card_3_1.jpeg"),
+      addBasePath("/images/card_3_2.jpeg"),
+      addBasePath("/images/card_3_3.jpeg"),
+      addBasePath("/images/card_3_4.jpeg"),
+      addBasePath("/images/card_3_5.jpeg"),
+      addBasePath("/images/card_3_6.mp4")
     ]
   },
   {
@@ -42,17 +48,17 @@ export const timelineData = [
     title: "First 'I Love You'",
     description: "Tiga kata ajaib yang mengubah segalanya. Saat kamu mengatakannya, waktu seolah berhenti. Detak jantungku semakin kencang, dan aku tahu inilah cinta yang sejati yang selalu kucari.",
     images: [
-      "/images/card_4_1.jpeg",
-      "/images/card_4_2.jpeg",
-      "/images/card_4_3.jpeg",
-      "/images/card_4_4.jpeg",
-      "/images/card_4_5.jpeg",
-      "/images/card_4_6.jpeg",
-      "/images/card_4_7.jpeg",
-      "/images/card_4_8.mp4",
-      "/images/card_4_9.mp4",
-      "/images/card_4_10.mp4",
-      "/images/card_4_11.mp4"
+      addBasePath("/images/card_4_1.jpeg"),
+      addBasePath("/images/card_4_2.jpeg"),
+      addBasePath("/images/card_4_3.jpeg"),
+      addBasePath("/images/card_4_4.jpeg"),
+      addBasePath("/images/card_4_5.jpeg"),
+      addBasePath("/images/card_4_6.jpeg"),
+      addBasePath("/images/card_4_7.jpeg"),
+      addBasePath("/images/card_4_8.mp4"),
+      addBasePath("/images/card_4_9.mp4"),
+      addBasePath("/images/card_4_10.mp4"),
+      addBasePath("/images/card_4_11.mp4")
     ]
   },
   {
@@ -61,19 +67,19 @@ export const timelineData = [
     title: "Christmas Together",
     description: "Natal pertama kita rayakan bersama di tengah hangatnya pohon Natal dan lampu-lampu gemerlap. Kamu adalah kado terindah yang pernah kuterima dalam hidupku.",
     images: [
-      "/images/card_5_1.jpeg",
-      "/images/card_5_2.jpeg",
-      "/images/card_5_3.jpeg",
-      "/images/card_5_4.jpeg",
-      "/images/card_5_5.jpeg",
-      "/images/card_5_6.jpeg",
-      "/images/card_5_7.jpeg",
-      "/images/card_5_8.jpeg",
-      "/images/card_5_9.jpeg",
-      "/images/card_5_10.jpeg",
-      "/images/card_5_11.jpeg",
-      "/images/card_5_11.mp4",
-      "/images/card_5_12.mp4"
+      addBasePath("/images/card_5_1.jpeg"),
+      addBasePath("/images/card_5_2.jpeg"),
+      addBasePath("/images/card_5_3.jpeg"),
+      addBasePath("/images/card_5_4.jpeg"),
+      addBasePath("/images/card_5_5.jpeg"),
+      addBasePath("/images/card_5_6.jpeg"),
+      addBasePath("/images/card_5_7.jpeg"),
+      addBasePath("/images/card_5_8.jpeg"),
+      addBasePath("/images/card_5_9.jpeg"),
+      addBasePath("/images/card_5_10.jpeg"),
+      addBasePath("/images/card_5_11.jpeg"),
+      addBasePath("/images/card_5_11.mp4"),
+      addBasePath("/images/card_5_12.mp4")
     ]
   },
   {
@@ -82,14 +88,14 @@ export const timelineData = [
     title: "Moving In Together",
     description: "Hari di mana kita mulai hidup bersama. Setiap sudut rumah kita menjadi saksi kisah cinta kita. Membangun rumah kecil yang penuh cinta dan tawa bersamamu adalah impian yang menjadi nyata.",
     images: [
-      "/images/card_6_1.jpeg",
-      "/images/card_6_2.jpeg",
-      "/images/card_6_3.jpeg",
-      "/images/card_6_4.jpeg",
-      "/images/card_6_5.jpeg",
-      "/images/card_6_6.jpeg",
-      "/images/card_6_7.jpeg",
-      "/images/card_6_8.jpeg"
+      addBasePath("/images/card_6_1.jpeg"),
+      addBasePath("/images/card_6_2.jpeg"),
+      addBasePath("/images/card_6_3.jpeg"),
+      addBasePath("/images/card_6_4.jpeg"),
+      addBasePath("/images/card_6_5.jpeg"),
+      addBasePath("/images/card_6_6.jpeg"),
+      addBasePath("/images/card_6_7.jpeg"),
+      addBasePath("/images/card_6_8.jpeg")
     ]
   },
   {
