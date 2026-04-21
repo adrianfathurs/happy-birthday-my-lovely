@@ -1,8 +1,10 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import Home from './pages/Home';
+import PasswordInput from './components/PasswordInput';
 
 function App() {
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
   const [cursorTrail, setCursorTrail] = useState([]);
   const playerRef = useRef(null);
@@ -186,7 +188,11 @@ function App() {
       )}
 
       {/* Main Content */}
-      <Home onEnvelopeOpen={startMusic} />
+      {!isAuthenticated ? (
+        <PasswordInput onSuccess={() => setIsAuthenticated(true)} />
+      ) : (
+        <Home onEnvelopeOpen={startMusic} />
+      )}
 
       {/* Footer */}
       <footer className="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-40">
