@@ -6,7 +6,7 @@ const AnimatedBackground = () => {
 
   useEffect(() => {
     // List all media files from public/images folder
-    const basePath = import.meta.env.BASE_URL || '/';
+    const basePath = '/happy-birthday-my-lovely/';
     const mediaFiles = [
       'card_1_1.jpeg',
       'card_1_2.jpeg',

@@ -1,4 +1,4 @@
-const basePath = import.meta.env.BASE_URL || '/';
+const basePath = '/happy-birthday-my-lovely/';
 const addBasePath = (path) => {
   if (path.startsWith('http')) return path;
   return `${basePath}images/${path.split('/').pop()}`;
