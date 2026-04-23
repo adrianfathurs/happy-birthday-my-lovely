@@ -189,12 +189,58 @@ const Timeline = ({ data }) => {
               whileInView={{ width: 'auto' }}
               transition={{ duration: 2, delay: 0.9, ease: 'easeInOut' }}
               viewport={{ once: true }}
-              className="inline-block overflow-hidden whitespace-nowrap"
             >
-              Terima kasih sudah menjadi bagian dari hidupku...
+              "Happy 25th Birthday, my love, Wahyu Budi Lestari ❤️
+              Semoga semua harapanmu selalu tercapai dan terwujud.
+              Semoga Allah selalu melindungimu dari segala bahaya,
+              dan memberikan keberuntungan yang tiada habisnya.
+
+              Semoga sayang selalu diberi kesehatan, diberi keceriaan, diberi
+              umur yang panjang, dan kebahagiaan yang tulus.
+
+              Di umurmu yang ke-25 ini,
+              semoga tahun ini menajadi tahun yang indah.
+
+              With all my love,
+              Adrian Fathur Setyawan 💖
+
             </motion.span>
           </motion.p>
+          <motion.p
+            className="font-body text-lg md:text-xl text-gray-600 leading-relaxed mb-8"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.7 }}
+            viewport={{ once: true }}
+          >
+            <motion.span
+              initial={{ width: 0 }}
+              whileInView={{ width: 'auto' }}
+              transition={{ duration: 2, delay: 0.9, ease: 'easeInOut' }}
+              viewport={{ once: true }}
+            >
+              "Kalo sayang perhatiin lagu yang diputer pertama kali web ini bunyi, kenapa mas kemarin malam suruh nyanyi lagu ini.
+               Lagu pertama yg diputer website ini, Yaaaa iniii,  biar sayang selalu inget suara kita nyanyi bareng yaa yang😁🤗."
 
+            </motion.span>
+          </motion.p>
+          <motion.p
+            className="font-body text-lg md:text-xl text-gray-600 leading-relaxed mb-8"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.7 }}
+            viewport={{ once: true }}
+          >
+            <motion.span
+              initial={{ width: 0 }}
+              whileInView={{ width: 'auto' }}
+              transition={{ duration: 2, delay: 0.9, ease: 'easeInOut' }}
+              viewport={{ once: true }}
+            >
+              "Kalo sayang suka sama hadiah ini, langsung chat mas yaaaa ketik "LOVE YOUU MAS❤️"
+
+            </motion.span>
+          </motion.p>
           <motion.p
             className="font-elegant text-2xl text-romantic-gold italic"
             initial={{ opacity: 0 }}

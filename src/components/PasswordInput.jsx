@@ -67,7 +67,7 @@ const PasswordInput = ({ onSuccess }) => {
           transition={{ delay: 0.5 }}
           className="text-gray-600 text-center mb-8"
         >
-          Masukkan password untuk membuka surat cinta ini 💕
+          Buka pake laptop yaa yaang dan Masukin password untuk membuka surat cinta ini 💕
         </motion.p>
 
         <form onSubmit={handleSubmit} className="space-y-4">
