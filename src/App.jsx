@@ -34,9 +34,9 @@ function App() {
       playerRef.current = new window.YT.Player('youtube-player', {
         height: '0',
         width: '0',
-        videoId: 'kSy3DLq6Fgo', // First video in the playlist
+        videoId: 'jia3fhBQ8qI', // First video in the playlist
         playerVars: {
-          list: 'RDkSy3DLq6Fgo', // Playlist parameter
+          list: 'RDjia3fhBQ8qI', // Playlist parameter
           listType: 'playlist',
           autoplay: 0,
           controls: 0,
